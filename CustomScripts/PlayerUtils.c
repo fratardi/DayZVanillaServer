@@ -8,12 +8,9 @@ void SendPlayerMessage(PlayerBase player, string message)	{
 void PrintPlayerName(PlayerBase player) {
     if (player && player.GetIdentity()) {
         string playerName = player.GetIdentity().GetName();
-
-    SendPlayerMessage(player, "helpMsg");
-
-
-       
-    } else {
+        SendPlayerMessage(player, "helpMsg");
+    } 
+    else {
         Print("Player or player identity is null.");
     }
 }
